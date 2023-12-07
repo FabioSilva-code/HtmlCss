@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 2-11-2</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Your Order</h1>
+			
+			<form action="" method="post" id="order-form">
+		
+					<div>
+						<div>
+							<label for="order-name">Name</label>
+							<input type="order-name" id="order-name" autofocus placeholder="Your full name">
+						</div>
+						<div>
+							<label for="order-email">Email Address</label>
+							<input type="order-email" id="order-email" disabled value="chuck@roundhouse.com">
+						</div>
+					</div>
+					<div>
+						<div>
+							<label for="order-address-1">Address</label>
+							<input type="order-address-1" id="order-address-1" placeholder="9 Augusta Street">
+							<input type="order-address-2" id="order-address-2" placeholder="Suite 122">
+						</div>
+					</div>
+				<div>
+					<div>
+						<label for="city-order">City</label>
+						<input type="city-order" placeholder="New Jersey" id="city-order">
+					</div>
+					<div>
+						<label for="order-state">State</label>
+						<select name="order-state" id="order-state">
+							<option value="New York">New York</option>
+							<option value="Alabama">Alabama</option>
+							<option value="Nebrask">Nebraska</option>
+							<option value="Ohio">Ohio</option>
+						</select>
+					</div>
+					<div>
+						<label for="zip-order">ZIP</label><input type="zip-order" placeholder="726221" id="zip-order">
+					</div>
+				</div>
+				<div>
+					<label>What color sample should we send you?
+						<label for="white-color">
+							<input disabled type="checkbox" name="order-color" id="white-color" value="white">White
+						</label>
+						<label for="magenta-color">
+							<input checked type="checkbox" name="order-color" id="magenta-color" value="magenta">Magenta
+						</label>
+						<label for="coral-color">
+							<input type="checkbox" name="order-color" id="coral-color" value="coral">Coral
+						</label>
+						<label for="burgundy-color">
+							<input checked type="checkbox" name="order-color" id="burgundy-color" value="burgundy">Burgundy
+						</label>
+						<label for="charcoal-color">
+							<input type="checkbox" name="order-color" id="charcoal-color" value="charcoal">Charcoal
+						</label>
+					</label>
+				</div>
+				<div>
+					<label>How large is your team?</label>
+					<label for="team-small">
+						<input type="radio" name="team-size" id="team-small" value="1-5 people">1-5 people
+					</label>
+					<label for="team-medium">
+							<input type="radio" name="team-size" id="team-medium" value="6-10 people" checked>6-10 people
+						</label>
+						<label for="team-large">
+							<input type="radio" name="team-size" id="team-large" value="10+ people">10+ people
+						</label>
+					</div>
+					<div>
+					<label for="order-comments">Comments</label>
+					<textarea name="order-comments" id="order-comments" cols="30" rows="10" placeholder="Please also send me one of...."></textarea>
+				</div>
+				<div>
+					<label for="offer-sign-up">
+						<input type="checkbox" name="offer-sign-up" id="offer-sign-up">sign up for special offers
+					</label>
+				
+					<!--<button>Place Order</button> -->
+					<!--<input type="button" value="Place Order"> -->
+				</div>
+			</form>
+			<button form="order-form">Place Order</button>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 2-11: Using Forms and Buttons">
+			<img width="903px" src="images/reference/order-form.png" alt="Reference image" />
+		</section>
+	</body>
+</html>
